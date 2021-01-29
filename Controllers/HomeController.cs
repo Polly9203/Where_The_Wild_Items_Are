@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Where_The_Wild_Items_Are.Models;
 
 namespace Where_The_Wild_Items_Are.Controllers
 {
@@ -13,17 +16,13 @@ namespace Where_The_Wild_Items_Are.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Login()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Registration()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
