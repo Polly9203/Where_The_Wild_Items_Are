@@ -64,7 +64,6 @@ C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Deb
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Views.pdb
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.csproj.CopyComplete
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.genruntimeconfig.cache
-C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
