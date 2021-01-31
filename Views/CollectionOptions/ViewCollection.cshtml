@@ -1,0 +1,58 @@
+﻿@model Where_The_Wild_Items_Are.Models.CollectionOptionsViewModels.ViewAndEditCollectionViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<style>
+    input[type="radio"] {
+        display: none;
+    }
+</style>
+
+
+<h2 class="text-center">@Model.Item.Caption</h2>
+<div class="row">
+    <label class="col-sm-2 col-sm-offset-1">@Localizer["Number of specialty"]: @Model.Item.NumberOfSpecialty</label><br />
+</div>
+<div class="row">
+    <p class="col-sm-2 col-sm-offset-1"><label>@Localizer["Annotation"]:</label> @Model.Item.Annotation</p>
+</div>
+<p>@Model.Item.Text</p>
+<hr />
+<form method="post" class="form-horizontal">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" id="messageText" name="messageText" />
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary" asp-route-id="@Model.Item.Id" asp-route-messageExist="@true">@Localizer["Send"]</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    @if (Model.ItemComments != null)
+    {
+        foreach (Comment comment in Model.ItemComments)
+        {
+            <div class="form-group row">
+                <blockquote>
+                    <label>
+                        <input type="radio" value="@comment.Id" name="parentId" />
+                        @comment.CreatorName: @comment.Text
+                    </label>
+                    <footer>
+                        @comment.CreationTime
+                        <button type="submit" class="btn" asp-route-id="@Model.Item.Id" asp-route-likeExist="@true" asp-route-commentId="@comment.Id">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            @comment.Like
+                        </button>
+                    </footer>
+                </blockquote>
+            </div>
+            @*<script>
+                function Like() {
+
+                }
+                </script>*@
+        }
+    }
+</form>

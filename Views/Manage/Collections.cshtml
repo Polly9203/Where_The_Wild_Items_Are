@@ -1,0 +1,49 @@
+﻿@model Where_The_Wild_Items_Are.Models.ManageViewModels.CollectionsViewModel
+
+
+@{
+    ViewData["Title"] = "Collections";
+    ViewData.AddActivePage(ManageNavPages.Collections);
+}
+
+
+<h3 class="text-center">@Model.UserName @Localizer["'s collections"]</h3>
+<form action="../CollectionOptions/CreateCollection">
+
+    @if (Model.UserCollections != null)
+    {
+        <table class="table">
+            <tr>
+                <th>
+                    <a asp-action="Collections" asp-route-sortOrder="@ViewBag.CaptionSort">@Localizer["Caption"]</a>
+                </th>
+                @*<th>
+                        <a asp-action="LectureSummaries" asp-route-sortOrder="@ViewBag.NameOfCreator">NameOfCreator</a>
+                    </th>*@
+                <th>
+                    <a asp-action="Collections" asp-route-sortOrder="@ViewBag.LastUpdateTimeSort">@Localizer["Date"]</a>
+                </th>
+                <th>
+                    <a asp-action="Collections" asp-route-sortOrder="@ViewBag.LikeSort">@Localizer["Like"]</a>
+                </th>
+                <th>
+                    <a asp-action="Collections" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Number of specialty"]</a>
+                </th>
+            </tr>
+
+            @foreach (Collection u in Model.UserCollections)
+            {
+                <tr>
+                    <td>
+                        <a asp-controller="CollectionOptions" asp-action="ViewAndEditCollection" asp-route-id="@u.Id">@u.Caption</a>
+                    </td>
+                    @*@<td>@u.NameOfCreator</td>*@
+                    <td>@u.LastUpdateTime</td>
+                    <td>@u.Like</td>
+                    <td>@u.NumberOfSpecialty</td>
+                </tr>
+            }
+        </table>
+    }
+    <button type="submit" class="btn btn-success">@Localizer["Create"]</button>
+</form>

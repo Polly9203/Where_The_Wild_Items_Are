@@ -1,3 +1,14 @@
 ﻿@using Where_The_Wild_Items_Are
+@using Microsoft.AspNetCore.Identity
 @using Where_The_Wild_Items_Are.Models
+@using Where_The_Wild_Items_Are.Models.AccountViewModels
+@using Where_The_Wild_Items_Are.Models.ManageViewModels
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+
+
+@inject IViewLocalizer Localizer

@@ -1,0 +1,86 @@
+﻿@model Where_The_Wild_Items_Are.Models.CollectionOptionsViewModels.ViewAndEditCollectionViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+<style>
+    input[type="radio"] {
+        display: none;
+    }
+</style>
+
+<form method="post" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">@Localizer["Heading"]</label>
+        <div class="col-sm-3">
+            <input class="form-control" id="caption" name="caption" value="@Model.Item.Caption">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">@Localizer["Number of specialty"]</label>
+        <div class="col-sm-3">
+            <input class="form-control" id="numberOfSpecialty" name="numberOfSpecialty" value="@Model.Item.NumberOfSpecialty">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">@Localizer["Annotation"]</label>
+        <div class="col-sm-6">
+            <textarea class="form-control" rows="2" id="annotation" name="annotation">@Model.Item.Annotation</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">@Localizer["Text"]</label>
+        <div class="col-sm-8">
+            <textarea class="form-control" rows="8" id="text" name="text">@Model.Item.Text</textarea>
+        </div>
+    </div>
+    <div class="btn-group" role="toolbar">
+            <button type="submit" class="btn btn-primary" asp-route-id="@Model.Item.Id" asp-route-like="@Model.Item.Like">@Localizer["Edit"]</button>
+            <button type="submit" class="btn btn-danger" asp-route-id="@Model.Item.Id" asp-route-delete="@true">@Localizer["Delete"]</button>
+            <button type="submit" class="btn btn-success" asp-route-id="@Model.Item.Id" asp-route-view="@true">@Localizer["View"]</button>
+    </div>
+        <hr />
+        <hr />
+        <hr />
+        <div class="row">
+            <h3>@Localizer["Send your comments"]</h3>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="messageText" name="messageText" />
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" asp-route-id="@Model.Item.Id" asp-route-messageExist="@true">@Localizer["Send"]</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        @if (Model.ItemComments != null)
+        {
+            foreach (Comment comment in Model.ItemComments)
+            {
+                <div class="form-group row">
+                    <blockquote>
+                        <label>
+                            <input type="radio" value="@comment.Id" name="parentId" />
+                            @comment.CreatorName: @comment.Text
+                        </label>
+                        <footer>
+                            @comment.CreationTime
+                            <button type="submit" class="btn" asp-route-id="@Model.Item.Id" asp-route-likeExist="@true" asp-route-commentId="@comment.Id">
+                                <span class="glyphicon glyphicon-heart"></span>
+                                @comment.Like
+                            </button>
+                        </footer>
+                    </blockquote>
+                </div>
+            }
+            @*<p id="comment_@comment.Id" onclick="www(@comment.Id)">
+                @comment.CreationTime @comment.CreatorName: @comment.Text
+            </p>*@
+        }
+</form>
+
+@*<script>
+    function www(id) {
+        var element = document.getElementById("comment_" + id);
+        element.style.backgroundColor = "green";
+    }
+</script>*@

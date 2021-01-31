@@ -1,12 +1,62 @@
-﻿@{
+﻿@using Where_The_Wild_Items_Are.Models
+@{
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Where The Wild Items Are</h1>
-    <p class="lead">
-        "Там, где живут атеймы" - новый взгляд на коллекционирование. Создайте свою уникальную коллекцию или
-        воспользуйтесь поиском по сайту чтобы посмотреть имеющиеся.
-    </p>
-    <p><a href="https://www.kinopoisk.ru/film/77418/" class="btn btn-primary btn-lg">Search &raquo;</a></p>
-</div>
+@model IEnumerable<Collection>
+<h1>@Localizer["List of collections"]</h1>
+<table class="table">
+    <tr>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.CaptionSort">@Localizer["Caption"]</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.LastUpdateTimeSort">@Localizer["Date"]</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.LikeSort">@Localizer["Like"]</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Number of specialty"]</a>
+        </th>
+        @if (User.IsInRole("admin"))
+        {
+            <th>
+                <a>@Localizer[" Admin editing"]</a>
+            </th>
+        }
+
+    </tr>
+    @foreach (Collection u in Model)
+    {
+        <tr>
+            <td>
+                <a asp-controller="CollectionOptions" asp-action="ViewCollection" asp-route-id="@u.Id">@u.Caption</a>
+            </td>
+            <td>@u.LastUpdateTime</td>
+            <td>@u.Like</td>
+            <td>@u.NumberOfSpecialty</td>
+
+            @if (User.IsInRole("admin"))
+            {
+                <td>
+                    <div class="col-sm-1">
+                        <a class="btn btn-primary" asp-controller="CollectionOptions" asp-action="ViewAndEditCollection" asp-route-id="@u.Id">
+                            @Localizer["Edit"]
+                        </a>
+
+                    </div>
+                </td>
+            }
+
+        </tr>
+    }
+
+</table>
+
+@if (User.IsInRole("admin"))
+{
+    <form action="../CollectionOptions/CreateCollection">
+        <button type="submit" class="btn btn-success">@Localizer["Create"]</button>
+    </form>
+}

@@ -1,0 +1,234 @@
+﻿@model IEnumerable<Where_The_Wild_Items_Are.Models.Table>
+
+@{
+    ViewData["Title"] = "Table";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Auth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Register)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.Role)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+    </thead>
+
+
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+
+            .btn-toolbar {
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: auto;
+                left: auto;
+                margin: auto;
+                background: #808080;
+                font-size: medium;
+                font-weight: bold;
+                border-bottom-width: medium;
+            }
+
+            .btn {
+                font-size: medium;
+                font-weight: bold;
+            }
+
+            .bg-danger {
+                background: #808080;
+            }
+
+            .table {
+                border-style: double;
+                border-color: #808080;
+                margin-top: 3%;
+            }
+
+            footer {
+                margin-top: 55%;
+                text-align: right
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+
+        <div class="bg-danger">
+
+            <div class="btn-group" role="toolbar">
+                <button type="button" class="btn btn-toolbar" onclick="Locking()">Block</button>
+                <button type="button" class="btn btn-toolbar" onclick="Unlocking()">Unblock</button>
+                <button type="button" class="btn btn-toolbar" onclick="Delete()">Delete</button>
+            </div>
+
+        </div>
+
+    </body>
+
+     <marquee>
+            <b>
+                This table containes information about all users
+            </b>
+        </marquee>
+        <br />
+        <br />
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    <input class="checkbox" type="checkbox" name="statuses" value="@item.ID">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Auth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Register)
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-userid="@item.ID">Права доступа</a>
+                </td>
+                 <td>
+                        @Html.DisplayFor(modelItem => item.Role)
+                    </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                    @if (item.Status == true)
+                    {
+                        <p>Active</p>
+                    }
+                    @if (item.Status == false)
+                    {
+                        <p>Blocked</p>
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    function Locking()
+    {
+        $.ajax({
+            type: 'POST',
+            url: "@Url.Action("LockUser", "Account")",
+            data: { arr: getCheckedCheckBoxes() },
+            success: function (data) {
+                if (data == true) {
+                    location.reload();
+                }
+                else {
+
+                }
+            },
+            error: function () {
+                alert("Error");
+            }
+        });
+    }
+
+    function Unlocking()
+    {
+        $.ajax(
+            {
+                type: 'POST',
+                url: "@Url.Action("UnLockUser", "Account")",
+                data: { arr: getCheckedCheckBoxes() },
+                success: function (data) {
+                    if (data == true) {
+                        location.reload();
+                    }
+                    else {
+
+                    }
+                },
+                error: function () {
+                    alert("Error");
+                }
+            }
+        );
+    }
+
+    function Delete()
+    {
+        $.ajax(
+            {
+                type: 'POST',
+                url: "@Url.Action("DeleteUser", "Account")",
+                data: { arr: getCheckedCheckBoxes() },
+                success: function (data) {
+                    if (data == true) {
+                        location.reload();
+                    }
+                    else {
+
+                    }
+                },
+                error: function () {
+                    alert("Error");
+                }
+            }
+        );
+    }
+
+    function getCheckedCheckBoxes()
+    {
+        var checkboxes = document.getElementsByClassName('checkbox');
+        var checkboxesChecked = [];
+        for (var index = 0; index < checkboxes.length; index++)
+        {
+            if (checkboxes[index].checked)
+            {
+            checkboxesChecked.push(checkboxes[index].value);
+            }
+        }
+        return checkboxesChecked;
+    }
+
+</script>
