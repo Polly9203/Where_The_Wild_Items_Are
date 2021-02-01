@@ -17,7 +17,7 @@
             <a asp-action="Index" asp-route-sortOrder="@ViewBag.LikeSort">@Localizer["Like"]</a>
         </th>
         <th>
-            <a asp-action="Index" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Number of specialty"]</a>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Tag"]</a>
         </th>
         @if (User.IsInRole("admin"))
         {
@@ -35,7 +35,7 @@
             </td>
             <td>@u.LastUpdateTime</td>
             <td>@u.Like</td>
-            <td>@u.NumberOfSpecialty</td>
+            <td>@u.Tag</td>
 
             @if (User.IsInRole("admin"))
             {

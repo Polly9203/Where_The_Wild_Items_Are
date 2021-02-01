@@ -129,8 +129,8 @@
   <data name="Heading" xml:space="preserve">
     <value>Название</value>
   </data>
-  <data name="Number of specialty" xml:space="preserve">
-    <value>Номер предмета</value>
+  <data name="NameOfCreator" xml:space="preserve">
+    <value>Имя создателя</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Отправить</value>

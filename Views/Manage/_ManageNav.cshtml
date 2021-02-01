@@ -11,6 +11,8 @@
     @if (hasExternalLogins)
     {
 <li class="@ManageNavPages.ExternalLoginsNavClass(ViewContext)"><a asp-action="ExternalLogins">External logins</a></li> }
-    <li class="@ManageNavPages.CollectionsNavClass(ViewContext)"><a asp-action="Collections">Collections</a></li>
 </ul>
-
+<ul class="nav nav-pills nav-stacked">
+    <li class="@ManageNavPages.CollectionsNavClass(ViewContext)">
+    <a asp-action="Collections">Collections</a></li>
+    </ul>

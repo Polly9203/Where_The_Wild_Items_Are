@@ -344,8 +344,6 @@ namespace Where_The_Wild_Items_Are.Controllers
             ViewData["LastUpdateTimeSort"] = sortOrder == SortState.LastUpdateTimeAscending ?
                 SortState.LastUpdateTimeDescendingly : SortState.LastUpdateTimeAscending;
             ViewData["LikeSort"] = sortOrder == SortState.LikeAscending ? SortState.LikeDescendingly : SortState.LikeAscending;
-            ViewData["NumberOfSpecialtySort"] = sortOrder == SortState.NumberOfSpecialtyAscending ?
-                SortState.NumberOfSpecialtyDescendingly : SortState.NumberOfSpecialtyAscending;
             List<Collection> temporaryCollections = new List<Collection>();
             foreach (Collection collection in db.Collections)
             {
@@ -409,7 +407,7 @@ namespace Where_The_Wild_Items_Are.Controllers
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("Knowledge_pantry"),
+                _urlEncoder.Encode("Where_The_Wild_Items_Are"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

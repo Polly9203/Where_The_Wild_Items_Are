@@ -27,7 +27,7 @@
                     <a asp-action="Collections" asp-route-sortOrder="@ViewBag.LikeSort">@Localizer["Like"]</a>
                 </th>
                 <th>
-                    <a asp-action="Collections" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Number of specialty"]</a>
+                    <a asp-action="Collections" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Tag"]</a>
                 </th>
             </tr>
 
@@ -40,7 +40,7 @@
                     @*@<td>@u.NameOfCreator</td>*@
                     <td>@u.LastUpdateTime</td>
                     <td>@u.Like</td>
-                    <td>@u.NumberOfSpecialty</td>
+                    <td>@u.Tag</td>
                 </tr>
             }
         </table>

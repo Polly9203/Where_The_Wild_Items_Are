@@ -10,9 +10,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-2 control-label">@Localizer["Number of specialty"]</label>
+        <label class="col-sm-2 control-label">@Localizer["Tag"]</label>
         <div class="col-sm-3">
-            <input class="form-control" id="numberOfSpecialty" name="numberOfSpecialty" placeholder="@Localizer["Number of specialty"]">
+            @await Html.PartialAsync("Tag")
         </div>
     </div>
     <div class="form-group">
@@ -24,7 +24,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label">@Localizer["Text"]</label>
         <div class="col-sm-8">
-            <textarea class="form-control" rows="12" id="text" name="text" placeholder="@Localizer["Text"]"></textarea>
+            <textarea class="form-control" rows="6" id="text" name="text" placeholder="@Localizer["Text"]"></textarea>
         </div>
     </div>
     <div class="form-group">
@@ -32,8 +32,5 @@
             <button type="submit" class="form-control btn btn-primary">@Localizer["Create"]</button>
         </div>
     </div>
-    <markdown>
-        ##qwret
-        </markdown>
 </form>
 

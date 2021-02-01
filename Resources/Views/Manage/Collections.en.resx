@@ -117,28 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Admin editing" xml:space="preserve">
-    <value>Функционал администратора</value>
+  <data name="'s collections" xml:space="preserve">
+    <value>'s collections</value>
   </data>
   <data name="Caption" xml:space="preserve">
-    <value>Название</value>
+    <value>Caption</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Создать</value>
+    <value>Create</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Дата</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Изменить</value>
+    <value>Date</value>
   </data>
   <data name="Like" xml:space="preserve">
-    <value>Лайки</value>
+    <value>Like</value>
   </data>
-  <data name="List of collections" xml:space="preserve">
-    <value>Список коллекций</value>
-  </data>
-  <data name="Number of specialty" xml:space="preserve">
-    <value>Номер предмета</value>
+  <data name="Tag" xml:space="preserve">
+    <value>Tag</value>
   </data>
 </root>

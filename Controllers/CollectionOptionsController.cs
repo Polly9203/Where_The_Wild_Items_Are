@@ -47,9 +47,9 @@ namespace Where_The_Wild_Items_Are.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateCollection(string caption, int numberOfSpecialty, string annotation, string text)
+        public IActionResult CreateCollection(string caption, string tag, string annotation, string text)
         {
-            Collection collection = new Collection(caption, annotation, numberOfSpecialty, text, _ApplicationUserManager.GetUserId(User));
+            Collection collection = new Collection(caption, annotation, tag, text, _ApplicationUserManager.GetUserId(User));
             db.Collections.Add(collection);
             //ApplicationUser ApplicationUser = db.Users.FirstOrDefault(p => p.Id == _UserManager.GetApplicationUserId(ApplicationUser));
             //ApplicationUser.Collections.Add(collection);
@@ -89,7 +89,7 @@ namespace Where_The_Wild_Items_Are.Controllers
         }
 
         [HttpPost]
-        public IActionResult ViewAndEditCollection(bool delete, string caption, int numberOfSpecialty, string annotation, string text,
+        public IActionResult ViewAndEditCollection(bool delete, string caption, string annotation, string text,
             int id, int like, bool messageExist, int parentId, string messageText, bool likeExist, int commentId, bool view)
         {
             Collection collection = db.Collections.Include(x => x.Comments).FirstOrDefault(p => p.Id == id);
@@ -117,7 +117,6 @@ namespace Where_The_Wild_Items_Are.Controllers
                             collection.Caption = caption;
                             collection.Annotation = annotation;
                             collection.Like = like;
-                            collection.NumberOfSpecialty = numberOfSpecialty;
                             collection.Text = text;
                             collection.LastUpdateTime = DateTime.Now;
                             db.Update(collection);

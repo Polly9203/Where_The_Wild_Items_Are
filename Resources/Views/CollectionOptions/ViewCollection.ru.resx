@@ -120,10 +120,10 @@
   <data name="Annotation" xml:space="preserve">
     <value>Краткое описание</value>
   </data>
-  <data name="Number of specialty" xml:space="preserve">
-    <value>Номер предмета</value>
-  </data>
   <data name="Send" xml:space="preserve">
     <value>Отправить</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>Теги</value>
   </data>
 </root>

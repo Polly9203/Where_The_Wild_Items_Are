@@ -43,6 +43,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -68,6 +72,10 @@
             "Microsoft.VisualStudio.Web.BrowserLink": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "WebMatrix.WebData": {
+              "target": "Package",
+              "version": "[2.0.30506, )"
             }
           },
           "imports": [
