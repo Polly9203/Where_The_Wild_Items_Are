@@ -131,3 +131,4 @@ C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Deb
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Roles.Index.ru.resources
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Shared.Index.ru.resources
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\Manage\Index.cshtml.g.cs
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_PageTheme.cshtml.g.cs
