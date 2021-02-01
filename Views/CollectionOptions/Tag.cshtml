@@ -1,9 +1,13 @@
-﻿<div class="nav navbar-nav nav-link text-dark">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<div class="nav navbar-nav nav-link text-dark">
     <select id="tag" name="tag">
-        <option value="Movies">Movies</option>
-        <option value="Alcohol">Alcohol</option>
-        <option value="Books">Books</option>
-        <option value="Flowers">Flowers</option>
-        <option value="DogPhoto">DogPhoto</option>
+        <option value="Tag">@Localizer["Tag"]</option>
+        <option value="Movies">@Localizer["Movies"]</option>
+        <option value="Alcohol">@Localizer["Alcohol"]</option>
+        <option value="Books">@Localizer["Books"]</option>
+        <option value="CatPhoto">@Localizer["CatPhoto"]</option>
+        <option value="DogPhoto">@Localizer["DogPhoto"]</option>
     </select>
 </div>

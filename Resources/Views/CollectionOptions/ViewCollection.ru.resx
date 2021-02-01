@@ -120,6 +120,9 @@
   <data name="Annotation" xml:space="preserve">
     <value>Краткое описание</value>
   </data>
+  <data name="Number of item" xml:space="preserve">
+    <value>Количество айтемов</value>
+  </data>
   <data name="Send" xml:space="preserve">
     <value>Отправить</value>
   </data>

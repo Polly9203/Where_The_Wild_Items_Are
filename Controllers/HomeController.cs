@@ -29,6 +29,8 @@ namespace Where_The_Wild_Items_Are.Controllers
             ViewData["LastUpdateTimeSort"] = sortOrder == SortState.LastUpdateTimeAscending ?
                 SortState.LastUpdateTimeDescendingly : SortState.LastUpdateTimeAscending;
             ViewData["LikeSort"] = sortOrder == SortState.LikeAscending ? SortState.LikeDescendingly : SortState.LikeAscending;
+            ViewData["NumberOfItemSort"] = sortOrder == SortState.NumberOfItemAscending ?
+               SortState.NumberOfItemDescendingly : SortState.NumberOfItemAscending;
             switch (sortOrder)
             {
                 case SortState.CaptionAscending:
@@ -45,6 +47,12 @@ namespace Where_The_Wild_Items_Are.Controllers
                     break;
                 case SortState.LikeDescendingly:
                     collections = collections.OrderByDescending(s => s.Like);
+                    break;
+                case SortState.NumberOfItemAscending:
+                    collections = collections.OrderBy(s => s.NumberOfItem);
+                    break;
+                case SortState.NumberOfItemDescendingly:
+                    collections = collections.OrderByDescending(s => s.NumberOfItem);
                     break;
                 default:
                     collections = collections.OrderBy(s => s.LastUpdateTime);

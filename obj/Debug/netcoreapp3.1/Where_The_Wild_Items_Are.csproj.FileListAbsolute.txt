@@ -125,7 +125,6 @@ C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Deb
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.csproj.GenerateResource.cache
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\en\Where_The_Wild_Items_Are.resources.dll
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\ru\Where_The_Wild_Items_Are.resources.dll
-C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Manage.Index.ru.resources
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\Manage\Index.cshtml.g.cs
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_PageTheme.cshtml.g.cs
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
@@ -134,3 +133,15 @@ C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Deb
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Manage.Collections.en.resources
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Manage.Collections.ru.resources
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Razor\Views\CollectionOptions\Tag.cshtml.g.cs
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.CollectionOptions.Tag.en.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.CollectionOptions.Tag.ru.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Shared._SelectLanguagePartial.en.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Shared._SelectLanguagePartial.ru.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Home.Tag.en.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Home.Tag.ru.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Manage.Tag.en.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Manage.Tag.ru.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Shared.Tag.en.resources
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Debug\netcoreapp3.1\Where_The_Wild_Items_Are.Resources.Views.Shared.Tag.ru.resources

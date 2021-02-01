@@ -126,6 +126,9 @@
   <data name="Heading" xml:space="preserve">
     <value>Название</value>
   </data>
+  <data name="NumberOfItem" xml:space="preserve">
+    <value>Количество айтемов</value>
+  </data>
   <data name="Tag" xml:space="preserve">
     <value>Теги</value>
   </data>

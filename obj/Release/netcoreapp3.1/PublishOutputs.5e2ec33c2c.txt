@@ -42,6 +42,11 @@ C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Rel
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\Where_The_Wild_Items_Are.pdb
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\en\Where_The_Wild_Items_Are.resources.dll
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\ru\Where_The_Wild_Items_Are.resources.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\CloudinaryDotNet.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\WebMatrix.Data.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\WebMatrix.WebData.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\polin\Just_all\Programming\Itransition\Where_The_Wild_Items_Are\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

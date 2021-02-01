@@ -344,6 +344,8 @@ namespace Where_The_Wild_Items_Are.Controllers
             ViewData["LastUpdateTimeSort"] = sortOrder == SortState.LastUpdateTimeAscending ?
                 SortState.LastUpdateTimeDescendingly : SortState.LastUpdateTimeAscending;
             ViewData["LikeSort"] = sortOrder == SortState.LikeAscending ? SortState.LikeDescendingly : SortState.LikeAscending;
+            ViewData["NumberOfItemSort"] = sortOrder == SortState.NumberOfItemAscending ?
+                SortState.NumberOfItemDescendingly : SortState.NumberOfItemAscending;
             List<Collection> temporaryCollections = new List<Collection>();
             foreach (Collection collection in db.Collections)
             {
@@ -368,6 +370,12 @@ namespace Where_The_Wild_Items_Are.Controllers
                     break;
                 case SortState.LikeDescendingly:
                     temporaryCollections = temporaryCollections.OrderByDescending(s => s.Like).ToList();
+                    break;
+                case SortState.NumberOfItemAscending:
+                    temporaryCollections = temporaryCollections.OrderBy(s => s.NumberOfItem).ToList();
+                    break;
+                case SortState.NumberOfItemDescendingly:
+                    temporaryCollections = temporaryCollections.OrderByDescending(s => s.NumberOfItem).ToList();
                     break;
                 default:
                     temporaryCollections = temporaryCollections.OrderBy(s => s.LastUpdateTime).ToList();

@@ -10,6 +10,12 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="col-sm-2 control-label">@Localizer["NumberOfItem"]</label>
+        <div class="col-sm-3">
+            <input class="form-control" id="caption" name="caption" placeholder="@Localizer["NumberOfItem"]">
+        </div>
+    </div>
+    <div class="form-group">
         <label class="col-sm-2 control-label">@Localizer["Tag"]</label>
         <div class="col-sm-3">
             @await Html.PartialAsync("Tag")

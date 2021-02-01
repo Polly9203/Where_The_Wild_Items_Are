@@ -19,8 +19,8 @@
 
 <form asp-controller="Home" asp-action="SetLanguage"
       asp-route-returnUrl="@Context.Request.Path"
-      method="post" class="footer text-right">
-    @Localizer["Language:"] <select name="culture" onchange="this.form.submit();"
+      method="post" class="navbar text-left">
+     <select name="culture" onchange="this.form.submit();"
                                     asp-for="@requestCulture.RequestCulture.UICulture.Name"
                                     asp-items="cultureItems"></select>
 </form>

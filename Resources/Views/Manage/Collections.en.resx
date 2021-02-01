@@ -132,6 +132,9 @@
   <data name="Like" xml:space="preserve">
     <value>Like</value>
   </data>
+  <data name="NumberOfItem" xml:space="preserve">
+    <value>Number of item</value>
+  </data>
   <data name="Tag" xml:space="preserve">
     <value>Tag</value>
   </data>

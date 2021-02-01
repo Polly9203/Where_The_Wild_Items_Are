@@ -129,8 +129,8 @@
   <data name="Heading" xml:space="preserve">
     <value>Heading</value>
   </data>
-  <data name="NumeOfCreator" xml:space="preserve">
-    <value>NameOfCreator</value>
+  <data name="NumberOfItem" xml:space="preserve">
+    <value>Number Of Item</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Send</value>

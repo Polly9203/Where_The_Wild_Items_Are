@@ -126,6 +126,9 @@
   <data name="Heading" xml:space="preserve">
     <value>Heading</value>
   </data>
+  <data name="NumberOfItem" xml:space="preserve">
+    <value>Namber of Item</value>
+  </data>
   <data name="Tag" xml:space="preserve">
     <value>Tag</value>
   </data>

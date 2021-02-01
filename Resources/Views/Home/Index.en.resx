@@ -138,7 +138,10 @@
   <data name="List of collections" xml:space="preserve">
     <value>List of collections</value>
   </data>
+  <data name="NumberOfItem" xml:space="preserve">
+    <value>Number of item</value>
+  </data>
   <data name="Tag" xml:space="preserve">
-    <value>Теги</value>
+    <value>Tag</value>
   </data>
 </root>

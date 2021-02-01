@@ -120,6 +120,9 @@
   <data name="Annotation" xml:space="preserve">
     <value>Annotation</value>
   </data>
+  <data name="NumberOfItem" xml:space="preserve">
+    <value>Number of item</value>
+  </data>
   <data name="Send" xml:space="preserve">
     <value>Send</value>
   </data>

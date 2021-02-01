@@ -17,7 +17,7 @@
             <a asp-action="Index" asp-route-sortOrder="@ViewBag.LikeSort">@Localizer["Like"]</a>
         </th>
         <th>
-            <a asp-action="Index" asp-route-sortOrder="@ViewBag.NumberOfSpecialtySort">@Localizer["Tag"]</a>
+            <a asp-action="Index" asp-route-sortOrder="@ViewBag.Tag">@Localizer["Tag"]</a>
         </th>
         @if (User.IsInRole("admin"))
         {

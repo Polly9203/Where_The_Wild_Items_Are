@@ -12,6 +12,8 @@ namespace Where_The_Wild_Items_Are.Models
         LastUpdateTimeAscending,    
         LastUpdateTimeDescendingly,   
         LikeAscending,    
-        LikeDescendingly,  
+        LikeDescendingly,
+        NumberOfItemAscending,
+        NumberOfItemDescendingly
     }
 }

@@ -61,7 +61,8 @@ namespace Where_The_Wild_Items_Are.Migrations
                     LastUpdateTime = table.Column<DateTime>(nullable: false),
                     Like = table.Column<int>(nullable: false),
                     LinkToCreator = table.Column<string>(nullable: true),
-                    NumberOfSpecialty = table.Column<int>(nullable: false),
+                    NumberOfItem = table.Column<int>(nullable: false),
+                    Tag = table.Column<string>(nullable: true),
                     Text = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

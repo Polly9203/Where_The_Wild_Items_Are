@@ -114,7 +114,7 @@ namespace Where_The_Wild_Items_Are.Migrations
 
                     b.Property<string>("LinkToCreator");
 
-                    b.Property<int>("NumberOfSpecialty");
+                    b.Property<int>("NumberOfItem");
 
                     b.Property<string>("Text");
 

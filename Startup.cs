@@ -41,6 +41,17 @@ namespace Where_The_Wild_Items_Are
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddAuthentication()
+    .AddGoogle(options =>
+    {
+        options.ClientId = Configuration["Authentication:Google:AppId"];
+        options.ClientSecret = Configuration["Authentication:Google:AppSecret"];
+    }).AddFacebook(options =>
+    {
+        options.AppId = Configuration["Authentication:Facebook:AppId"];
+        options.AppSecret = Configuration["Authentication:Facebook:AppSecret"]; ;
+    });
+
             services.AddLocalization(options => options.ResourcesPath = "Resources");
             services.AddMvc()
                 .AddDataAnnotationsLocalization()

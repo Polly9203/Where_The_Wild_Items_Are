@@ -11,6 +11,7 @@ namespace Where_The_Wild_Items_Are.Models
         public string Caption { get; set; }
         public string LinkToCreator { get; set; }
         public string Annotation { get; set; }
+        public int NumberOfItem { get; set; }
         public string Text { get; set; }
         public string Tag { get; set; }
         public int Like { get; set; }
@@ -19,10 +20,11 @@ namespace Where_The_Wild_Items_Are.Models
 
         public Collection() { }
 
-        public Collection(string caption, string annotation, string tag, string text, string linkToCreator)
+        public Collection(string caption, string annotation, int numberOfItem, string tag, string text, string linkToCreator)
         {
             Caption = caption;
             Annotation = annotation;
+            NumberOfItem = numberOfItem;
             Text = text;
             LinkToCreator = linkToCreator;
             Like = 0;

@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("3d3ece8f-e9ad-46e6-846b-44ea08cb063b")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Where_The_Wild_Items_Are")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
